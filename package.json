@@ -1,0 +1,21 @@
+{
+  "name": "voc-multi-viewer",
+  "version": "1.0.0",
+  "description": "Geographical name status vocabulary hierarchy viewer",
+  "scripts": {
+    "build": "esbuild app.js --bundle --minify --outfile=assets/app.js",
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "CC-BY-4.0",
+  "type": "module",
+  "dependencies": {
+    "n3": "^2.13.12"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  },
+  "private": true
+}

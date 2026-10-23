@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geographical Name Status Types</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="masthead">
+      <a href="https://icsm.information.qld.gov.au/" aria-label="ICSM Catalogue"><img src="assets/icsm-logo.png" alt="ICSM — ANZLIC Committee on Surveying & Mapping"></a>
+      <span class="organisation">Intergovernmental Committee<br>on Surveying and Mapping</span>
+    </div>
+    <nav aria-label="Main navigation">
+      <a href="https://icsm.information.qld.gov.au/">ICSM Catalogue</a>
+      <a href="#main" aria-current="page">Geographical Name Status Types</a>
+      <a href="gn-status-types.ttl" download>Download vocabulary <span aria-hidden="true">↓</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <h1>Geographical Name Status Types</h1>
+    <p class="intro">Explore the status types used to classify geographical names across Australia, per jurisdiction.</p>
+    <section class="controls" aria-label="Display settings">
+      <div><label for="jurisdiction">View</label><select id="jurisdiction">
+        <option value="national">National</option><option value="act">ACT</option><option value="nt">NT</option><option value="nsw">NSW</option><option value="qld">Qld</option><option value="tas">Tas</option><option value="vic">Vic</option><option value="sa">SA</option><option value="wa">WA</option><option value="aad">AAD</option><option value="all">All</option>
+      </select></div>
+    </section>
+    <p id="view-description" class="hint"></p>
+    <section class="hierarchy-panel" aria-labelledby="hierarchy-title">
+      <div class="panel-heading"><h2 id="hierarchy-title">Concept hierarchy</h2><div><button id="expand" type="button">Expand all</button><button id="collapse" type="button">Collapse all</button></div></div>
+      <p id="status" role="status">Loading vocabulary…</p>
+      <div id="hierarchy"></div>
+    </section>
+    <p class="source">Source: <a href="gn-status-types.ttl">gn-status-types.ttl</a> · Experimental vocabulary</p>
+  </main>
+  <dialog id="concept-modal" aria-labelledby="concept-title">
+    <div class="modal-heading"><h2 id="concept-title"></h2><button id="close-modal" type="button" autofocus aria-label="Close concept information">Close ×</button></div>
+    <dl id="concept-fields"></dl>
+  </dialog>
+  <footer><span>Geographical names</span><a href="https://icsm.information.qld.gov.au/">ICSM Catalogue ↗</a></footer>
+</body>
+</html>
